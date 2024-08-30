@@ -1,0 +1,9 @@
+[package]
+name = "fusion-sys"
+version = "0.1.0"
+edition = "2021"
+links = "fusion"
+
+[build-dependencies]
+bindgen = "0.70"
+cc = "1"
