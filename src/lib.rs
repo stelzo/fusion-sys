@@ -2,9 +2,10 @@
 #![allow(non_camel_case_types)]
 #![allow(non_snake_case)]
 
-use std::os::raw::c_void;
+mod bindings;
+use bindings::*;
 
-include!(concat!(env!("OUT_DIR"), "/bindings.rs"));
+use std::os::raw::c_void;
 
 use std::sync::{Arc, Mutex};
 

@@ -3,7 +3,28 @@ name = "fusion-sys"
 version = "0.1.0"
 edition = "2021"
 links = "fusion"
+authors = ["Christopher Sieh <stelzo@steado.de>"]
+description = "Bindings for the IMU Fusion library."
+repository = "https://github.com/stelzo/fusion-sys"
+license = "MIT"
+keywords = ["ros", "imu", "filter", "ahrs", "madgwick"]
+categories = ["science::robotics"]
+readme = "README.md"
+documentation = "https://docs.rs/fusion-sys"
+homepage = "https://github.com/stelzo/fusion-sys"
+exclude = [
+    "**/.github/**",
+    "**/tests/**",
+    "**/examples/**",
+    "**/benches/**",
+    "**/target/**",
+    "**/build/**",
+    "**/dist/**",
+    "**/docs/**",
+    "**/doc/**",
+    "**/ensure_no_std/**",
+]
+rust-version = "1.65"
 
 [build-dependencies]
-bindgen = "0.70"
 cc = "1"
